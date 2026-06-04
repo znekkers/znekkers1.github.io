@@ -9,39 +9,96 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play A day in the life of Iris.</tw-noscript></noscript></tw-story>
-<tw-storydata name="A day in the life of Iris" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="04C14D8B-FE34-4561-BFF6-F49E4571C49B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="100,0" size="100,100">(set: $luck to (random: 1, 2))
+<tw-storydata name="A day in the life of Iris" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="04C14D8B-FE34-4561-BFF6-F49E4571C49B" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="25,750" size="100,100">(set: $luck to (random: 1, 2))
 (set: $luck2 to (random: 1, 2))
 
 You are Iris. You are 17 years old and mentally unstable. You&#39;ve just woken up from a dream about doing coke. You look at your clock and realize you have to leave for school in twenty minutes at the latest. Do you go?
 
 [[skip]]
 [[go to school]]
-</tw-passagedata><tw-passagedata pid="2" name="skip" tags="" position="100,200" size="100,100">[[Bed]]
-[[Penny]]</tw-passagedata><tw-passagedata pid="3" name="go to school" tags="" position="300,0" size="100,100">{
+</tw-passagedata><tw-passagedata pid="2" name="skip" tags="" position="75,1050" size="100,100">[Well, that&#39;s that. No school today. Your attendance is good enough for your teachers to probably not care. It&#39;s not like you had any tests today. You started a new unit in Physics but you&#39;re good at Physics so it doesn&#39;t matter. What matters now is figuring out what to do with your day. You&#39;re not good at being alone for such a long time, so you want to invite [[Penny]] to climb through your window. Then again, you could always [[sleep|Bed]] longer. You were up late doing cocaine, and you still feel it.
+
+</tw-passagedata><tw-passagedata pid="3" name="go to school" tags="" position="75,500" size="100,100">{
 (if: $luck &lt; 2) [Your mom is asleep and you can&#39;t drive. So you can&#39;t go to school anyway. Your girlfriend Penny&#39;s also probably not going to school. You could call her up and [[ask her to come over|Penny]] or you can [[go back to bed|Bed]]]
 
 (if: $luck &gt; 1) [You throw on the clothes scattered on the floor, and run downstairs to find your mom waiting to drive you to [[School]]]
 
-}</tw-passagedata><tw-passagedata pid="4" name="Penny" tags="" position="200,400" size="100,100">{
-(if: $luck2 &gt; 1) [Penny comes over immediately when you call. You two sit on your floor and smoke your cart while staring at the ceiling, a common activity between you two. You tend to go nonverbal when you&#39;re high, and she tends to talk, so it works out. 
+}</tw-passagedata><tw-passagedata pid="4" name="Penny" tags="" position="200,1200" size="100,100">{
+(if: $luck2 &gt; 1) [Penny comes over immediately when you call. You two sit on your floor and smoke your cart while staring at the ceiling, a common activity between you two. You tend to go nonverbal when you&#39;re high, and she tends to talk, so it works out. ]
 
-You get a text from Jade 
+(if: $luck2 &lt; 1) [Penny doesn&#39;t pick up the phone, so you go [[back to bed.|Bed]]]
+}
 
-to be continued...</tw-passagedata><tw-passagedata pid="5" name="Bed" tags="" position="0,400" size="100,100">[You go back to sleep. You don&#39;t sleep restfully, but it&#39;s enough. You&#39;re sure your mom will be upset if she remembers that she was supposed to drive you to school, but you don&#39;t see her often enough to care.]
+
+[Hours and hours later, you get a [[text from Jade]] asking if you guys are having a writing session that night.]
+
+</tw-passagedata><tw-passagedata pid="5" name="Bed" tags="" position="275,1000" size="100,100">[You go back to sleep. You don&#39;t sleep restfully, but it&#39;s enough. You&#39;re sure your mom will be upset if she remembers that she was supposed to drive you to school, but you don&#39;t see her often enough to care.]
 
 [[Next]]
-</tw-passagedata><tw-passagedata pid="6" name="School" tags="" position="500,0" size="100,100">Your first period is:
+</tw-passagedata><tw-passagedata pid="6" name="School" tags="" position="200,500" size="100,100">Your first period is:
 
 [[English]]
 [[Spanish]]
-</tw-passagedata><tw-passagedata pid="7" name="English" tags="" position="425,125" size="100,100">to be continued...</tw-passagedata><tw-passagedata pid="8" name="Spanish" tags="" position="562.5,125" size="100,100">to be continued...</tw-passagedata><tw-passagedata pid="9" name="Next" tags="" position="125,575" size="100,100">[You wake up again at 1PM, feeling like you&#39;ve been drugged. Which, you guess, is valid since you did do a line last night, but it usually doesn&#39;t make you feel this groggy. Whatever client your dad had probably cut it with something. It doesn&#39;t matter anyway. You check your phone to see that Penny is on her way over, unannounced. You also see a [[text from Jade]] asking if you guys are having a writing session that night.] </tw-passagedata><tw-passagedata pid="10" name="text from Jade" tags="" position="250,700" size="100,100">[Do you...]
+</tw-passagedata><tw-passagedata pid="7" name="English" tags="" position="325,425" size="100,100">to be continued...</tw-passagedata><tw-passagedata pid="8" name="Spanish" tags="" position="325,600" size="100,100">to be continued...</tw-passagedata><tw-passagedata pid="9" name="Next" tags="" position="475,1000" size="100,100">[You wake up again at 1PM, feeling like you&#39;ve been drugged. Which, you guess, is valid since you did do a line last night, but it usually doesn&#39;t make you feel this groggy. Whatever client your dad had probably cut it with something. It doesn&#39;t matter anyway. You check your phone to see that Penny is on her way over, unannounced. You also see a [[text from Jade]] asking if you guys are having a writing session that night.] </tw-passagedata><tw-passagedata pid="10" name="text from Jade" tags="" position="400,1200" size="100,100">[Do you...]
 
 [[flake on Jade and hang out with Penny]]
 [[let Penny sit in on the session]]
 
-[It&#39;s not an option not to let Penny come over. She wouldn&#39;t take no for an answer.]
+{
+(if: (history:) contains &quot;Penny&quot;)[Penny would probably be pissed if you kicked her out, so there&#39;s no way she&#39;s not staying.]
 
-to be continued...</tw-passagedata><tw-passagedata pid="11" name="flake on Jade and hang out with Penny" tags="" position="187.5,825" size="100,100"></tw-passagedata><tw-passagedata pid="12" name="let Penny sit in on the session" tags="" position="312.5,825" size="100,100"></tw-passagedata></tw-storydata>
+(else:) [Not letting Penny come over is not an option. She would come over if it killed you.]
+}
+
+</tw-passagedata><tw-passagedata pid="11" name="flake on Jade and hang out with Penny" tags="" position="600,1300" size="100,100">[You know Jade will be angry, but you send your usual text, letting Jade know that you won&#39;t be able to write tonight. Again. You haven&#39;t been writing in ages, but you haven&#39;t had the motivation. [[Back when you and Jade were still dating]], you had tons of inspiration... because you weren&#39;t in love with your girlfriend and wanted to make out with your best friend. Lots of inspiration. Now you have a girlfriend you love and nothing to write about. Writing about happy things is boring.]</tw-passagedata><tw-passagedata pid="12" name="let Penny sit in on the session" tags="" position="600,1150" size="100,100">to be continued...</tw-passagedata><tw-passagedata pid="13" name="Back when you and Jade were still dating" tags="" position="750,1300" size="100,100">[You and Jade dated for a year and a half. You regretted getting into a relationship with her almost immediately, but didn&#39;t know exactly why or how to break it to her. After [[Penny and Aria broke up]], you finally faced the facts that you were waiting for Penny&#39;s attention. Of course, you&#39;re not a dick, so you broke up with Jade. Hurt feelings are better than cheating.]</tw-passagedata><tw-passagedata pid="14" name="Penny and Aria broke up" tags="" position="900,1300" size="100,100">[I still don&#39;t fully know why Penny and Aria broke up. She won&#39;t tell me the full story, although I&#39;m not sure she knows the full story. I know she was drinking, I know Aria got mad, and I know Penny woke up on a park bench with a text from Aria telling her never to come back.]]
+
+[[Next|flaking on jade]]</tw-passagedata><tw-passagedata pid="15" name="flaking on jade" tags="" position="1025,1300" size="100,100">{
+(if: (history:) contains &quot;Penny&quot; and $luck2 &gt; 1)[Jade calls you five times before Penny gets to your house. Which is a half hour. Safe to say she&#39;s upset. But she&#39;ll deal. She rarely writes songs, and she doesn&#39;t sing, so [[Stoneflower]] needs you.]
+
+(else:) [Jade calls you five times in half an hour while you and Penny are on the floor. Safe to say she&#39;s upset. But she&#39;ll deal. She rarely writes songs, and she doesn&#39;t sing, so [[Stoneflower]] needs you.]
+}
+
+[Still, you can&#39;t help but to be irritated. She bothers you like you&#39;re still dating. Penny&#39;s not helping with her giggling either. She finds the entire situation hilarious.]
+
+Do you:
+[[Snap at Penny]]
+[[Snap at Jade]]
+[[Say nothing]]</tw-passagedata><tw-passagedata pid="16" name="Stoneflower" tags="" position="1025,1400" size="100,100">[Stoneflower was formed in ninth grade when I started sharing my songs with Jade. Jade is my producer mainly. Sometimes she writes songs, but I generally write most of them. She helps with the melodies, though. I&#39;ve never been good at melodies. She also usually sings the high notes for me. We like to joke that one day people are going to find out that the high notes are never my voice and my career will be over. The curse of being an alto, I guess. I love the band, but Jade makes it hard to.
+
+[[Back|flaking on jade]] </tw-passagedata><tw-passagedata pid="17" name="Snap at Penny" tags="" position="1200,1350" size="100,100">[&quot;Penny, please shut up. You&#39;re not helping. I&#39;m fucking exasperated at Jade right now. Just be quiet for two seconds while I deal with this.&quot;]
+[&quot;No need for your fancy words, damn. I&#39;ll shut up.]
+
+[Penny turns her back to you on your floor, leaving you laying, staring at the ceiling alone. You say you&#39;re sorry. She says, &quot;I know.&quot;]
+
+[You lay in silence.]
+
+[[Next|idk yet]]</tw-passagedata><tw-passagedata pid="18" name="Snap at Jade" tags="" position="1200,1500" size="100,100">[You send a strongly worded, multiple text rant to Jade]
+
+[istg j leave me alone]&lt;step1|
+
+(click-replace: ?step1)[istg j leave me alone
+[i&#39;m just hanging out with penny tn let me have a life]&lt;step2|]
+
+(click-replace: ?step2)[i&#39;m just hanging out with penny tn let me have a life
+[not everything is about the band yk]&lt;step3|]
+
+(click-replace: ?step3)[not everything is about the band yk
+[dont u have to watch your sisters or do homework or smth]&lt;step4|]
+
+(click-replace: ?step4)[dont u have to watch your sisters or do homework or smth
+[why are u always bothering me]&lt;step5|]
+
+(click-replace: ?step5)[why are u always bothering me
+[ill tell you next time i want to write]&lt;step6|]
+
+(click-replace: ?step6)[ill tell you next time i want to write
+[just leave me alone j]&lt;step7|]
+
+(click-replace: ?step7)[just leave me alone j]
+
+[You&#39;re consumed with regret, but Penny is handing you a cigarette, so you indulge and try to forget.]]
+
+to be continued</tw-passagedata><tw-passagedata pid="19" name="Say nothing" tags="" position="1200,1200" size="100,100">to be continued...</tw-passagedata><tw-passagedata pid="20" name="idk yet" tags="" position="1350,1325" size="100,100">to be continued...</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
